@@ -1,0 +1,29 @@
+{
+    "versions" : [ "openjdk-6", "openjdk-7", "openjdk-8" ],
+
+    "name" : "jolokia/java-jolokia",
+
+    "jolokiaBaseUrl": "http://central.maven.org/maven2/org/jolokia/jolokia-jvm",
+
+    "jolokiaVersion": "1.2.2",
+
+    "maintainer" : "roland@jolokia.org",
+
+    "config": {
+        "openjdk-6" : {
+            "java": "java:6b32",
+            "tags" : [ "6b32", "6", "openjdk-6" ],
+            "fullVersion": "OpenJDK 1.8.0_40 (1.8.0_40-internal-b04)"
+        },
+        "openjdk-7": {
+            "java": "java:7u65",
+            "tags" : [ "7u65", "7", "openjdk-7", "latest" ],
+            "fullVersion": "OpenJDK 1.7.0_65 (7u65-2.5.0-2)"
+        },
+        "openjdk-8" : {
+            "java": "java:8u40",
+            "tags" : [ "8u40", "8", "openjdk-8" ],
+            "fullVersion": "OpenJDK 1.8.0_40 (1.8.0_40-internal-b04)"
+        }
+    }
+}
