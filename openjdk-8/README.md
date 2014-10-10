@@ -4,17 +4,17 @@ This image is based on the official [java](https://registry.hub.docker.com/_/jav
 includes a Jolokia JVM agent. The agent is installed as `/opt/jolokia/jolokia.jar`. 
 
 In order to enable Jolokia for your application you should use this 
-image as a base image (via `FROM`) and use the output of `/jolokia` in 
+image as a base image (via `FROM`) and use the output of `jolokia_opts` in 
 your startup scripts to include it in your startup options. 
 
 For example, the following snippet can be added to a script starting up your 
 Java application
 
     # ...
-    export JAVA_OPTIONS="$JAVA_OPTIONS $(/jolokia)"
+    export JAVA_OPTIONS="$JAVA_OPTIONS $(jolokia_opts)"
     # .... us JAVA_OPTIONS when starting your app, e.g. as Tomcat does
 
-You can influence the behaviour `/jolokia` by setting various environment 
+You can influence the behaviour `jolokia_opts` by setting various environment 
 variables:
 
 * **JOLOKIA_OFF** : If set (with any value) disables activation of Jolokia (i.e. echos an empty value). By default, Jolokia is enabled. 
