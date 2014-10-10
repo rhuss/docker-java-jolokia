@@ -1,8 +1,6 @@
 #!/bin/bash
 JOLOKIA_DIR=${JOLOKIA_DIR:-/opt/jolokia}
-if [ -n "${JOLOKIA_OFF}" ]; then
-   JOLOKIA_OPTS=""
-else
+if [ -z ${JOLOKIA_OFF+x} ]; then
    JOLOKIA_OPTS="-javaagent:${JOLOKIA_DIR}/jolokia.jar"
    JOLOKIA_CONFIG=${JOLOKIA_CONFIG:-$JOLOKIA_DIR/jolokia.properties}
    JOLOKIA_HOST=${JOLOKIA_HOST:-*}
@@ -22,5 +20,5 @@ else
    if [ -n "$JOLOKIA_ARGS" ]; then
       JOLOKIA_OPTS="${JOLOKIA_OPTS}=${JOLOKIA_ARGS#?}"
    fi
+   echo $JOLOKIA_OPTS
 fi
-echo $JOLOKIA_OPTS
