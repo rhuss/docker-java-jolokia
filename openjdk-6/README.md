@@ -18,7 +18,7 @@ You can influence the behaviour `jolokia_opts` by setting various environment
 variables:
 
 * **JOLOKIA_OFF** : If set (with any value) disables activation of Jolokia (i.e. echos an empty value). By default, Jolokia is enabled. 
-* **JOLOKIA_CONFIG** : If set uses this file (including path) as Jolokia JVM agent properties (as described in Jolokia's reference manual). By default this is `/opt/jolokia/jolokia.properties`. If this file exists, it be will taken as configuration, if not it is ignored.  
+* **JOLOKIA_CONFIG** : If set uses this file (including path) as Jolokia JVM agent properties (as described in Jolokia's [reference manual](http://www.jolokia.org/reference/html/agents.html#agents-jvm)). By default this is `/opt/jolokia/jolokia.properties`. If this file exists, it be will taken as configuration, if not it is ignored.  
 * **JOLOKIA_HOST** : Host address to bind to (Default: 0.0.0.0)
 * **JOLOKIA_PORT** : Port to use (Default: 8778)
 * **JOLOKIA_USER** : User for authentication. By default authentication is switched off.
