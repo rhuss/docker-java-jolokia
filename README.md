@@ -36,5 +36,3 @@ The configuration of the Jolokia agent can be influenced with various environmen
  `./build.js` will create the final automated build from the configuration and the templates. When calling `./build.js -b`
  then all images are build locally when a Docker daemon is running (and `DOCKER_HOST` is set properly). With `./build.js -h` 
  a short help message is printed.
- 
- 
