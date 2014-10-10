@@ -9,7 +9,7 @@ relevant options which should be included as argument to the Java startup comman
 Here is a simple example for creating a Tomcat 7 images which starts Jolokia along with tomcat:
 
 ````
-ROM jolokia/java-jolokia:7
+FROM jolokia/java-jolokia:7
 ENV TOMCAT_VERSION 7.0.55
 ENV TC apache-tomcat-${TOMCAT_VERSION}
 
