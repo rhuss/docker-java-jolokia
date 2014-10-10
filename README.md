@@ -31,12 +31,8 @@ The configuration of the Jolokia agent can be influenced with various environmen
  directory `templates` which uses the [doT](http://olado.github.io/doT/index.html) templating library. All you need is 
  to adapt `config.json` if to upgrade the version number or adding a new build. 
  
- For the initial setup, `npm` needs to install some dependencies. 
- 
- ````
- npm install
- ````
- 
+ For the initial setup, `npm install` needs to install some dependencies. 
+  
  `./build.js` will create the final automated build from the configuration and the templates. When calling `./build.js -b`
  then all images are build locally when a Docker daemon is running (and `DOCKER_HOST` is set properly). With `./build.js -h` 
  a short help message is printed.
