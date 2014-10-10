@@ -25,7 +25,7 @@ CMD env CATALINA_OPTS=$(jolokia_opts) /opt/${TC}/bin/catalina.sh run
 The configuration of the Jolokia agent can be influenced with various environments variables. Please refer to the 
 [README](openjdk-7)s of the various image variants.
  
- ## Build system
+## Build system
  
  For generating the images a simple node.js based templating script is used. The templates can be found in the 
  directory `templates` which uses the [doT](http://olado.github.io/doT/index.html) templating library. All you need is 
