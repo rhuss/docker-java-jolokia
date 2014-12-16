@@ -158,7 +158,7 @@ function doBuildImages(docker,versions,nocache,config) {
                 stream.on('end', function () {
                     var tags = config.config[version].tags || [];
                     tags.forEach(function(tag) {
-                        docker.getImage(name).tag({repo: IMAGE_NAME, tag: tag }, function (error, result) {
+                        docker.getImage(name).tag({"repo": IMAGE_NAME, "tag": tag, "force": true }, function (error, result) {
                             if (error) {
                                 throw error;
                             }

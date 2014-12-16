@@ -5,15 +5,15 @@
 
     "jolokiaBaseUrl": "http://central.maven.org/maven2/org/jolokia/jolokia-jvm",
 
-    "jolokiaVersion": "1.2.2",
+    "jolokiaVersion": "1.2.3",
 
     "maintainer" : "roland@jolokia.org",
 
     "config": {
         "openjdk-6" : {
-            "java": "java:6b32",
-            "tags" : [ "6b32", "6", "openjdk-6" ],
-            "fullVersion": "OpenJDK 1.8.0_40 (1.8.0_40-internal-b04)"
+            "java": "java:6b33",
+            "tags" : [ "6b33", "6", "openjdk-6" ],
+            "fullVersion": "OpenJDK 1.6.0_33 (6b33-1.13.5-2~deb7u1)"
         },
         "openjdk-7": {
             "java": "java:7u71",
