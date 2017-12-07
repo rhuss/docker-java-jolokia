@@ -1,3 +1,12 @@
+# NOTE
+
+Please note that this project has been superseded by https://github.com/fabric8io-images/java which has some extra features like nice run script which respects the container boundaries. Its available for Java 8 and Java 7. 
+
+So, when you require Java 6 or Java 7 then this project might still be of value for you. But please note that it is not maintained anymore.
+
+-------------
+
+
 # Spicy Docker Java Image with Jolokia
 
 This repository holds automated builds for variants of the official [java](https://registry.hub.docker.com/_/java)
